@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +16,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//用户添加路由
+Route::get('user/add', 'UserController@add');
+//用户执行添加路由
+Route::post('user/store', 'UserController@store');

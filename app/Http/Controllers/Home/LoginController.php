@@ -73,7 +73,6 @@ class LoginController extends Controller
 //        md5加密
         $str = '123456';
 //        $md5str =  md5($str);
-
 //        $salt = '123';
 //        $str='456';
 //        $md5str = md5($salt.$str);

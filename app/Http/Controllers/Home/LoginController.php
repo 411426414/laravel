@@ -39,7 +39,6 @@ class LoginController extends Controller
 
 
 //        3. 验证用户是否存在
-
         $user = HomeUser::where('user_name',$input['user_name'])->first();
         if(empty($user)){
             return redirect('login')->with('errors','用户名不存在');

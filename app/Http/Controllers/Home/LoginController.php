@@ -46,7 +46,6 @@ class LoginController extends Controller
         }
 
 
-
 //        4. 密码是否正确
         if($input['user_pass'] !=  Crypt::decrypt($user->user_pass) ){
             return redirect('login')->with('errors','密码不对');

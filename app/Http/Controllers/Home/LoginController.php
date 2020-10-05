@@ -88,7 +88,6 @@ class LoginController extends Controller
 //        crypt加密
         return  Crypt::encrypt($str);
 //       $cryptstr = 'eyJpdiI6ImpYdFBpc3gzb043OWdRXC9vellRMUF3PT0iLCJ2YWx1ZSI6IlQrYkt0Ump3Uk1nTHFtb21zUGtwSXc9PSIsIm1hYyI6ImQ0ZTBmNDg5YWU3MDgwODU0YmZjNDRhMTdkNmJkODc4MjRiZjQwZTI1NmMwZTExMjc3MTZkNjJjNmQ0YmIzMTQifQ==';
-
 //       return Crypt::decrypt($cryptstr);
     }
 

@@ -1,7 +1,6 @@
 <?php
 
 //前台路由
-
 Route::get('/','Home\IndexController@index')->name('index');
 Route::get('lists/{id}','Home\IndexController@lists');
 Route::get('detail/{id}','Home\IndexController@detail');

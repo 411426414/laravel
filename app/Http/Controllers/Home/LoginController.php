@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\Home;
 
 use App\Model\HomeUser;

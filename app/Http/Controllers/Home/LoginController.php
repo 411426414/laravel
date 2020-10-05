@@ -52,7 +52,6 @@ class LoginController extends Controller
             return redirect('login')->with('errors','密码不对');
         }
         //如果登录成功，将登录用户信息保存到session中
-
         session()->put('homeuser',$user);
 
         return redirect('/');

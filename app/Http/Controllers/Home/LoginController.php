@@ -51,7 +51,6 @@ class LoginController extends Controller
         if($input['user_pass'] !=  Crypt::decrypt($user->user_pass) ){
             return redirect('login')->with('errors','密码不对');
         }
-
         //如果登录成功，将登录用户信息保存到session中
 
         session()->put('homeuser',$user);

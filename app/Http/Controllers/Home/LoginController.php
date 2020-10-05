@@ -28,7 +28,6 @@ class LoginController extends Controller
         $password = $input['user_pass'];
 //        $token = md5(uniqid(rand(), TRUE));
         $timeout = time() + 60*60*24*7;
-
         if(isset($input['rememberme'])){
             setcookie('username', "$username", $timeout);
             setcookie('password', "$password", $timeout);
